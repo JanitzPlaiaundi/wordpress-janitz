@@ -1,6 +1,8 @@
-const opcionUsuario = prompt("Escribe A para alta, B para baja, C para consultar y S para salir")
+const opcionUsuario = prompt("Escribe A para alta, B para baja, C para consultar y S para salir").trim().toUpperCase()
 
-switch(opcionUsuario.toUpperCase){
+console.log("En este ejemplo he puesto c")
+
+switch(opcionUsuario){
     case "A":
         console.log("Alta")
         break
@@ -17,4 +19,4 @@ switch(opcionUsuario.toUpperCase){
         console.log("Opcion no valida")
 }
 
-console.log("Si quitas el break se ejecutan todas las acciones siguientes")
+console.log("Explicacion del break: Si quitas el break se ejecutan todas las acciones siguientes")
