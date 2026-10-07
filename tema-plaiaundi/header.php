@@ -17,7 +17,7 @@
         </a>
     </h1>
 
-    <p><?php bloginfo('description'); ?></p>
+    <!--<p><?php bloginfo('description'); ?></p>-->
         <nav>
         <?php
         wp_nav_menu(
