@@ -6,13 +6,13 @@ Template Name: Ejercicios JS
 get_header(); ?>
     
     <main>
-        <h1>Ejercicios de JavaScript</h1>
+        <h1><?php the_title(); ?></h1>
 
     <div class="lista-ejercicios">
         <?php
-        $directorio_servidor = get_stylesheet_directory() . '/js/';
-
-        $directorio_url = get_stylesheet_directory_uri() . '/js/';
+        $slug_pagina = get_post()->post_name;
+        $directorio_servidor = get_stylesheet_directory() . '/js/' . $slug_pagina . '/';
+        $directorio_url      = get_stylesheet_directory_uri() . '/js/' . $slug_pagina . '/';
 
         if (is_dir($directorio_servidor)) {
 

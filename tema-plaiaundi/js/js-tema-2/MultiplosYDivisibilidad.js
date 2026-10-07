@@ -2,12 +2,16 @@ let multiplosDe3 = []
 
 for(let i = 1; i<=100; i++){
 
-    if(iteracion)
+    if(i <= 3){
+        console.log("Iteracion " + i + " valor: " + i)
+    }
 
     if(i % 3 == 0 && i % 5 != 0){
         multiplosDe3.push(i)
     }
 }
+
+console.log("Bucle terminado, datos calculados")
 
 multiplosDe3.forEach(num => {
     console.log(num)
